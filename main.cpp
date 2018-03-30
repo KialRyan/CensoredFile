@@ -15,9 +15,13 @@ int main()
   
   in >> first;
   
-  while(!in.eof())
+  while(!in.eof() )
   {
-  in >> last;
+  in >> current;
+    if (isalpha (current))
+    {
+    current = last;
+    }
   }
 
 
